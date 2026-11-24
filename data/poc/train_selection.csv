@@ -1,0 +1,36 @@
+image_id,vehicle_count,max_vehicle_area,timeofday,weather,scene,sampling_category
+ab12975c-abce86fe.jpg,7,10166.908553000658,night,clear,city street,Negative
+92b12a2d-68c584f8.jpg,16,123929.8302679331,night,clear,highway,Negative
+1337f4dd-d87d60e9.jpg,4,31895.34635424282,night,clear,city street,Negative
+195fd017-7ee9a071.jpg,37,118788.51580786101,night,clear,highway,Difficult
+6e631f87-7d308e09.jpg,15,29798.877180175543,daytime,clear,residential,Difficult
+2b30da97-808ea308.jpg,16,37037.65056815364,daytime,clear,highway,Small
+924d5601-f9765cf7.jpg,19,17456.38786672178,daytime,undefined,city street,Small
+7c39cb29-a8d47933.jpg,5,244556.30489126538,daytime,clear,city street,Clear
+5d5d80fc-63934c59.jpg,0,0.0,night,clear,highway,Clear
+5615435d-ec2116d2.jpg,4,141157.6030205623,dawn/dusk,snowy,highway,Difficult
+91efc83f-e7ab79ea.jpg,5,148350.10008153293,night,rainy,city street,Difficult
+5877b384-2545daf4.jpg,19,23318.305354140633,daytime,clear,highway,Difficult
+375d0b68-81b7752a.jpg,4,224434.2785645986,daytime,undefined,city street,Difficult
+07ef9f5f-42c0ac31.jpg,9,123068.85792444868,daytime,snowy,city street,Small
+594a3eda-cff3b147.jpg,17,99045.8496383142,daytime,snowy,residential,Small
+08af00e7-11793477.jpg,5,84227.91724528621,daytime,undefined,highway,Multiple
+89f9e53e-737689a7.jpg,6,7369.5559369943885,night,rainy,highway,Multiple
+3e09ad9b-660220a6.jpg,12,113735.65985430738,night,clear,city street,Difficult
+78ef6a0e-1e4640ac.jpg,4,230887.18026461537,daytime,rainy,city street,Clear
+0839f8ce-4c797e78.jpg,11,71862.93578931324,daytime,rainy,city street,Clear
+65f9d8c9-ec1f518d.jpg,8,39830.36399439932,daytime,snowy,highway,Multiple
+34ce1f4c-a4b1b1ca.jpg,27,190315.94835484505,daytime,snowy,city street,Multiple
+7c3cbe32-84414585.jpg,8,178506.89504731336,daytime,snowy,highway,Small
+797e8a5e-d6f02a0a.jpg,12,58903.6100185876,daytime,overcast,highway,Multiple
+6d945b7c-15fdfefd.jpg,14,43720.09586559122,daytime,overcast,city street,Clear
+94b6dd3b-1b3da448.jpg,9,59675.5644203334,daytime,clear,city street,Clear
+949ac918-0b346a76.jpg,8,337005.99011185946,daytime,clear,city street,Clear
+774fdd25-fcbbd425.jpg,14,66784.42797037991,daytime,clear,city street,Clear
+01b4e4b9-e21fe0a3.jpg,14,135259.50319213248,daytime,partly cloudy,city street,Clear
+97151fb2-712bb76f.jpg,11,139399.08594153213,night,clear,city street,Clear
+18267a77-3208837b.jpg,5,114920.29004970708,night,undefined,highway,Clear
+a9c8091c-b76e7006.jpg,21,119694.66912880502,daytime,undefined,residential,Clear
+04b72436-876582fc.jpg,14,217223.553714074,daytime,undefined,city street,Clear
+4a806b9a-0a8d737e.jpg,10,173398.200258131,daytime,overcast,city street,Clear
+2330bb2e-f9766e66.jpg,6,134591.59629246214,daytime,snowy,city street,Clear

@@ -1,0 +1,45 @@
+# Project environment
+.venv/
+venv/
+.env
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local editor and shell state
+.vscode/
+Microsoft/
+
+# Raw datasets and generated image data
+data/raw/
+data/samples/*
+!data/samples/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Experiment outputs and model weights
+artifacts/
+outputs/
+runs/
+models/
+weights/
+*.ckpt
+*.onnx
+*.pt
+*.pth
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# POC dataset images
+data/poc/images/
+data/poc/yolo_dataset/images/
+
+# Dataset archives
+*.zip
