@@ -1,0 +1,6 @@
+path: "C:/Users/aarish.tickoo/workspace/traffic-pii-masking/data/dataset_v1/yolo_dataset"
+train: "images/train"
+val: "images/val"
+test: "images/test"
+names:
+  0: license_plate

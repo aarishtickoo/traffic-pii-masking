@@ -48,28 +48,32 @@ The original ZIP archive is retained outside the repository.
 - Static images, not video.
 - Batch inference rather than real-time inference.
 
-## Annotation Budget
+## Dataset v1 Review Budget
 
-Initially annotate 200 images manually:
+Select 200 images while preserving the official BDD100K
+split boundaries:
 
-- Training: 140 images
+- Training: 160 images
 - Validation: 20 images
-- Testing: 40 images
+- Testing: 20 images
 
-Use deliberate sampling for training and random sampling
-for validation and testing.
+The target is plates containing human-readable registration
+information. Each split includes clear readable, challenging
+but readable, and negative images. Candidate generation is
+metadata-assisted and reproducible; final inclusion is based
+on manual review.
 
-## Image Categories
+## Dataset v1 Sampling Categories
 
-1. Negative: No visible licence plates.
-2. Easy: Clear and easily distinguishable licence plates.
-3. Difficult: Small, blurred, angled or partially occluded
-   but identifiable licence plates.
-4. Ambiguous: Potential plates that cannot confidently
-   be identified.
+1. Clear readable: registration information is human-readable.
+2. Challenging but readable: the plate is harder to inspect but
+   registration information remains human-readable.
+3. Negative: no plate with human-readable registration
+   information is present.
 
-Annotate every confidently identifiable licence plate,
-regardless of whether its characters are readable.
+Multiple readable plates are allowed but are not a separate
+sampling category. Detailed annotation rules will be finalized
+before annotation begins.
 
 ## Technology Stack
 
@@ -96,10 +100,12 @@ regardless of whether its characters are readable.
 - [x] Install initial exploration dependencies
 - [x] Download and safely extract the BDD100K archive
 - [x] Verify dataset structure, splits and image counts
-- [ ] Analyze image dimensions
-- [ ] Explore available dataset metadata
-- [ ] Sample 500 training images
-- [ ] Categorize sampled images
+- [x] Analyze image dimensions
+- [x] Explore available dataset metadata
+- [x] Complete a 50-image end-to-end proof of concept
+- [x] Prepare the Dataset v1 candidate-generation and review notebook
+- [ ] Generate Dataset v1 candidate pools (approximately 800/100/100)
+- [ ] Review candidates against the 160/20/20 split quotas
 - [ ] Finalize annotation guidelines
 - [ ] Select 200 images for annotation
 - [ ] Set up CVAT
@@ -142,11 +148,14 @@ regardless of whether its characters are readable.
 
 ## Current Status
 
-Repository and Python environment setup are complete. The
-BDD100K archive has been extracted to `data/raw/bdd100k/`,
-and its original train, validation and test splits have been
-preserved and verified.
+Repository setup, dataset exploration, and the initial
+50-image YOLO11n proof of concept are complete. The BDD100K
+archive remains under `data/raw/bdd100k/` with its original
+train, validation, and test splits preserved.
 
-The initial dataset exploration notebook exists but contains
-no exploration logic yet. The immediate next step is to
-analyze image dimensions and the available BDD100K metadata.
+`notebooks/03_dataset_v1_sampling.ipynb` now defines the next
+dataset-preparation stage. The immediate next step is to cache
+test-split vehicle statistics, generate candidate pools, and
+manually review images. Model training remains blocked until
+the 200-image selection and licence plate annotation milestone
+is complete.

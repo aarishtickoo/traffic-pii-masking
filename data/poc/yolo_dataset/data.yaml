@@ -1,6 +1,6 @@
-Test: Test.txt
-Train: Train.txt
-Validation: Validation.txt
+path: C:\Users\aarish.tickoo\workspace\traffic-pii-masking\data\poc\yolo_dataset
+train: images/Train
+val: images/Validation
+test: images/Test
 names:
   0: license_plate
-path: .
